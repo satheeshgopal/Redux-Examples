@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 import { ADD_TODO } from './actions'
 
-function todos(state = {todolist:[]}, action) {
+export function todos(state = {todolist:[]}, action) {
    switch (action.type) {
        case ADD_TODO:
            state.todolist.push({id:action.id, text:action.text});
